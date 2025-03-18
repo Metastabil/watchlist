@@ -1,0 +1,75 @@
+.btn {
+    font: 400 normal 18px 'Rubik', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    position: relative;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+}
+
+.btn:active {
+    top: 1px;
+}
+
+.btn:hover:after {
+    opacity: 1;
+}
+
+.btn span {
+    position: relative;
+    z-index: 3;
+}
+
+.btn-green {
+    background: linear-gradient(to bottom, var(--light-green) 5%, var(--dark-green) 100%);
+}
+
+.btn-green:after {
+    background: linear-gradient(to bottom, var(--dark-green) 5%, var(--light-green) 100%);
+    transition: opacity .5s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: 2;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+
+.btn-blue {
+    background: linear-gradient(to bottom, var(--light-blue) 5%, var(--dark-blue) 100%);
+}
+
+.btn-blue:after {
+    background: linear-gradient(to bottom, var(--dark-blue) 5%, var(--light-blue) 100%);
+    transition: opacity .5s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: 2;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+
+.btn-red {
+    background: linear-gradient(to bottom, var(--light-red) 5%, var(--dark-red) 100%);
+}
+
+.btn-red:after {
+    background: linear-gradient(to bottom, var(--dark-red) 5%, var(--light-red) 100%);
+    transition: opacity .5s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: 2;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}

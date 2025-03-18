@@ -1,0 +1,88 @@
+@import 'variables.css';
+@import 'buttons.css';
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik.ttf') format('truetype');
+}
+
+* { box-sizing: border-box; }
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    font: 400 normal 18px 'Rubik', sans-serif;
+    background-color: var(--background);
+}
+
+header,
+nav {
+    width: 100%;
+}
+
+nav {
+    background-color: var(--navigation-background);
+    padding: 10px;
+}
+
+.nav-element {
+    transition: color .3s ease-in-out;
+    text-decoration: none;
+    color: var(--grey);
+    padding: 8px 16px;
+}
+
+.nav-element:hover {
+    color: var(--white);
+}
+
+main {
+    padding: 10px;
+}
+
+.title {
+    color: var(--white);
+    margin: 0 0 15px 0;
+}
+
+.default-table {
+    border-collapse: collapse;
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+.default-table th {
+    border-bottom: 1px solid var(--grey);
+    color: var(--white);
+    text-align: left;
+    padding: 8px;
+}
+
+.default-table td {
+    border-bottom: 1px solid var(--grey);
+    color: var(--white);
+    padding: 8px;
+}
+
+.default-table tbody tr:last-child td {
+    border: none;
+}
+
+.table-actions {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.table-actions a {
+    margin: 0 5px 0 0;
+}
+
+.table-actions a:last-child {
+    margin: 0;
+}
